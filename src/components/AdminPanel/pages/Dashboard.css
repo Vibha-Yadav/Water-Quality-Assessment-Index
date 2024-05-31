@@ -1,0 +1,126 @@
+/* .parent{
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  height: 100%;
+} */
+.card {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(107, 105, 105, 0.1);
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex-basis: 30%;
+  margin: 10px;
+}
+
+.stat p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.wqi h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.stat h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pollutants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.pollutant {
+  flex-basis: 45%;
+  margin: 10px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.header {
+  margin-bottom: 20px;
+
+}
+.header h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.parameters {
+  display: flex;
+  flex-direction: column;
+
+}
+.paramTop {
+  display: flex;
+  justify-content: space-around;
+}
+.paramBottom {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  left: 20px;
+}
+
+stats h3{
+  font-size: 18px;
+}
+.wqi {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 130px;
+}
+
+.footerClass {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  top: -20px;
+}

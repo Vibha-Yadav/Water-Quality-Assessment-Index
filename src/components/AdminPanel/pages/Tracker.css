@@ -1,0 +1,22 @@
+
+.selection{
+    font-size: 20px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+.graph{
+    top: 50px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 770px;
+  height: 550px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(100px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 20px;
+}
