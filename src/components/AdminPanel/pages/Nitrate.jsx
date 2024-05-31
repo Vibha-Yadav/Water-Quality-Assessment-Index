@@ -16,31 +16,31 @@ const Nitrate = () => {
     fetchData();
   }, []);
 
-  // const parseCSV = (csv) => {
-  //   //Split CSV by lines
-  //   const rows = csv.split('\n');
+  const parseCSV = (csv) => {
+    //Split CSV by lines
+    const rows = csv.split('\n');
     
-  //   // Extract header row to get column indices
-  //   const headerRow = rows[0].split(',');
-  //   const timestampIndex = headerRow.indexOf('Timestamp');
-  //   const no3Index = headerRow.indexOf('NO3');
+    // Extract header row to get column indices
+    const headerRow = rows[0].split(',');
+    const timestampIndex = headerRow.indexOf('Timestamp');
+    const no3Index = headerRow.indexOf('NO3');
 
-  //   // Initialize array to store parsed data
-  //   const parsedData = [];
+    // Initialize array to store parsed data
+    const parsedData = [];
 
-  //   // Iterate over rows (excluding header)
-  //   for (let i = 1; i < rows.length; i++) {
-  //     const row = rows[i].split(',');
-  //     if (row.length >= Math.max(timestampIndex, no3Index)) {
-  //       parsedData.push({
-  //         timestamp: row[timestampIndex],
-  //         no3: parseFloat(row[no3Index]) // Assuming NO3 values are numeric
-  //       });
-  //     }
-  //   }
+    // Iterate over rows (excluding header)
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i].split(',');
+      if (row.length >= Math.max(timestampIndex, no3Index)) {
+        parsedData.push({
+          timestamp: row[timestampIndex],
+          no3: parseFloat(row[no3Index]) // Assuming NO3 values are numeric
+        });
+      }
+    }
 
-  //   return parsedData;
-  // };
+    return parsedData;
+  };
 
   // Function to filter data based on selected interval type
   const filterDataByInterval = (interval) => {
